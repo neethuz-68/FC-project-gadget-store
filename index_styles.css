@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #001f29;
+}
+
+header {
+    background-color: #000d0e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001214;
+    padding: 50px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    font-size: 52px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: saddlebrown;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #841425;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center; 
+    margin-top: 100px; 
+    color:aliceblue;
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.body-link {
+    list-style: none; 
+    padding: 0;
+    margin-top: 20px;
+}
+
+.body-link li {
+    display: inline-block; 
+}
+
+.body-link a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #04151F; 
+    color: rgb(221, 240, 14); 
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.body-link a:hover {
+    background-color: #063F5E; 
+    transform: scale(1.5); 
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#home, #products, #contact {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}

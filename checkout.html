@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Gadgets & Accessories</title>
+    <link rel="stylesheet" href="checkout_styles.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">GadgetHub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="checkout.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        
+        <div class="cart-items" id="cart-items"></div>
+
+        <div class="cart-summary">
+            <h3>Total: ₹<span id="total-price">0</span></h3>
+        </div>
+
+        <section class="payment-methods">
+            <h2>Choose Payment Method</h2>
+            <div class="payment-options">
+                <label>
+                    <input type="radio" name="payment" value="credit-card"> Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="paypal"> PayPal
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="apple-pay"> Apple Pay
+                </label>
+            </div>
+        </section>
+
+        <button class="checkout-button" id="checkout-button">Proceed to Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
