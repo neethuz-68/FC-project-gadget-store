@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let product = {
                 id: button.getAttribute("data-id"),
                 name: productCard.querySelector("h3").textContent,
-                price: parseFloat(productCard.querySelector(".price").textContent.replace("₹", "").replace(",", "")),
+                price: parseFloat(productCard.querySelector(".price").textContent.replace("₹", "").replace(",", "")..replace(",", "")),
                 image: productCard.querySelector("img").src
             };
             addToCart(product);
